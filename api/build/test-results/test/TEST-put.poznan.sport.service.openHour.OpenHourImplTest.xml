@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="put.poznan.sport.service.openHour.OpenHourImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-04-02T17:54:52" hostname="DESKTOP-NVIS5CR" time="0.075">
+  <properties/>
+  <testcase name="getOpenHourById_ShouldThrowException_WhenNotFound()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.06"/>
+  <testcase name="saveOpenHour_ShouldSaveAndReturnOpenHour()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.005"/>
+  <testcase name="getOpenHourById_ShouldReturnOpenHour_WhenExists()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.002"/>
+  <testcase name="deleteOpenHour_ShouldDeleteOpenHour()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

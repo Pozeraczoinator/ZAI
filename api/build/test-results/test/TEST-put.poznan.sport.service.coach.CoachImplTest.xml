@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="put.poznan.sport.service.coach.CoachImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-04-02T17:54:51" hostname="DESKTOP-NVIS5CR" time="1.34">
+  <properties/>
+  <testcase name="updateCoach_ShouldUpdateCoachDetails()" classname="put.poznan.sport.service.coach.CoachImplTest" time="1.305"/>
+  <testcase name="deleteCoach_ShouldDeleteCoach()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.004"/>
+  <testcase name="createCoach_ShouldReturnCoachCreateResponse()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.008"/>
+  <testcase name="getCoachById_ShouldThrowException_WhenCoachNotFound()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.01"/>
+  <testcase name="getCoachById_ShouldReturnCoach_WhenCoachExists()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.005"/>
+  <testcase name="getAllCoaches_ShouldReturnListOfCoaches()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
