@@ -39,3 +39,6 @@ out/
 
 ### macOS ###
 ._*
+
+# Ignore keystore.p12 file
+api/build/resources/main/keystore.p12
