@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="put.poznan.sport.service.rating.RatingImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-16T08:16:18" hostname="DESKTOP-NVIS5CR" time="0.12">
+<testsuite name="put.poznan.sport.service.rating.RatingImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-16T08:27:45" hostname="DESKTOP-NVIS5CR" time="0.174">
   <properties/>
-  <testcase name="createRating_ShouldThrowException_WhenRatingAlreadyExists()" classname="put.poznan.sport.service.rating.RatingImplTest" time="0.102"/>
-  <testcase name="getAllRatings_ShouldReturnCoachRating_WhenTypeIsCoach()" classname="put.poznan.sport.service.rating.RatingImplTest" time="0.01"/>
-  <testcase name="createRating_ShouldThrowException_WhenCoachNotFound()" classname="put.poznan.sport.service.rating.RatingImplTest" time="0.006"/>
+  <testcase name="createRating_ShouldThrowException_WhenRatingAlreadyExists()" classname="put.poznan.sport.service.rating.RatingImplTest" time="0.151"/>
+  <testcase name="getAllRatings_ShouldReturnCoachRating_WhenTypeIsCoach()" classname="put.poznan.sport.service.rating.RatingImplTest" time="0.012"/>
+  <testcase name="createRating_ShouldThrowException_WhenCoachNotFound()" classname="put.poznan.sport.service.rating.RatingImplTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

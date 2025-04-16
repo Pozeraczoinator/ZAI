@@ -45,8 +45,7 @@ public class SportFacilityImpl implements SportFacilityService {
 
     @Override
     public SportFacility createSportFacility(SportFacilityDTO facilityDTO) {
-        User currentUser = userRepository.findByEmail(userService.getCurrentUsername()).orElseThrow(() -> new UserNotFoundException("Nie znaleziono użytkownika"));
-
+        User currentUser = userRepository.getById(1);
         SportFacility sportFacility = SportFacility.builder()
                 .name(facilityDTO.getName())
                 .description(facilityDTO.getDescription())
@@ -101,9 +100,7 @@ public class SportFacilityImpl implements SportFacilityService {
         SportFacility facility = sportFacilityRepository.findById(managerDTO.getSportFacilityId())
                 .orElseThrow(() -> new SportFacilityNotFoundException("Nie znaleziono obiektu o id " + managerDTO.getSportFacilityId()));
 
-        User newManager = userRepository.findById(managerDTO.getUserId())
-                .orElseThrow(() -> new UserNotFoundException("Nie znaleziono użytkownika o id: " + managerDTO.getUserId()));
-
+        User newManager = userRepository.getById(1);
         Collection<Authority> updatedAuthorities = new HashSet<>();
         for (GrantedAuthority authority : newManager.getAuthorities()) {
             if (authority instanceof Authority) {
