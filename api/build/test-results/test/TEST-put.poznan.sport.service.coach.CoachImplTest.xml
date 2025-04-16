@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="put.poznan.sport.service.coach.CoachImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-04-09T06:34:39" hostname="DESKTOP-NVIS5CR" time="2.025">
+<testsuite name="put.poznan.sport.service.coach.CoachImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-04-16T08:16:16" hostname="DESKTOP-NVIS5CR" time="2.19">
   <properties/>
-  <testcase name="updateCoach_ShouldUpdateCoachDetails()" classname="put.poznan.sport.service.coach.CoachImplTest" time="1.971"/>
-  <testcase name="deleteCoach_ShouldDeleteCoach()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.008"/>
+  <testcase name="updateCoach_ShouldUpdateCoachDetails()" classname="put.poznan.sport.service.coach.CoachImplTest" time="2.141"/>
+  <testcase name="deleteCoach_ShouldDeleteCoach()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.006"/>
   <testcase name="createCoach_ShouldReturnCoachCreateResponse()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.011"/>
-  <testcase name="getCoachById_ShouldThrowException_WhenCoachNotFound()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.015"/>
-  <testcase name="getCoachById_ShouldReturnCoach_WhenCoachExists()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.006"/>
-  <testcase name="getAllCoaches_ShouldReturnListOfCoaches()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.006"/>
+  <testcase name="getCoachById_ShouldThrowException_WhenCoachNotFound()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.014"/>
+  <testcase name="getCoachById_ShouldReturnCoach_WhenCoachExists()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.005"/>
+  <testcase name="getAllCoaches_ShouldReturnListOfCoaches()" classname="put.poznan.sport.service.coach.CoachImplTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

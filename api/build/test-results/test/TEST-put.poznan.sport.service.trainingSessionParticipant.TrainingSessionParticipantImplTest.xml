@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-09T06:34:41" hostname="DESKTOP-NVIS5CR" time="0.258">
+<testsuite name="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-16T08:16:19" hostname="DESKTOP-NVIS5CR" time="0.243">
   <properties/>
-  <testcase name="leaveTraining_ShouldRemoveParticipant()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.245"/>
-  <testcase name="joinTraining_ShouldAddParticipant()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.007"/>
-  <testcase name="getAllParticipant_ShouldReturnListOfParticipants()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.004"/>
+  <testcase name="leaveTraining_ShouldRemoveParticipant()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.226"/>
+  <testcase name="joinTraining_ShouldAddParticipant()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.01"/>
+  <testcase name="getAllParticipant_ShouldReturnListOfParticipants()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
