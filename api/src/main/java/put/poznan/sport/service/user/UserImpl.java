@@ -101,9 +101,9 @@ public class UserImpl implements UserService {
                 .map(User::getUsername)
                 .toList();
 
-        if(!managerUserNames.contains(currentUser) && !user.getAuthorities().contains(Authority.ADMIN)){
+      /*  if(!managerUserNames.contains(currentUser) && !user.getAuthorities().contains(Authority.ADMIN)){
             throw new InvalidUserException("Nie możesz zarządzać tym obiektem z poziomu tego konta");
-        }
+        }*/
 
     }
 }
