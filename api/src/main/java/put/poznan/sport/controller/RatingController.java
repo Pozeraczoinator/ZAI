@@ -52,8 +52,7 @@ public class RatingController {
 
         validParam(rating.getObjectType());
 
-        User user = userRepository.findByEmail(userService.getCurrentUsername())
-                .orElseThrow(() -> new UserNotFoundException("Błąd użytkownika"));
+        User user = userRepository.getById(1);
 
         Rating newRating = Rating.builder()
                 .addedBy(user)
@@ -72,8 +71,7 @@ public class RatingController {
 
         validParam(rating.getObjectType());
 
-        User user = userRepository.findByEmail(userService.getCurrentUsername())
-                .orElseThrow(() -> new UserNotFoundException("Błąd użytkownika"));
+        User user = userRepository.getById(1);
 
         Rating newRating = Rating.builder()
                 .addedBy(user)
@@ -93,8 +91,7 @@ public class RatingController {
 
         validParam(type);
 
-        User user = userRepository.findByEmail(userService.getCurrentUsername())
-                .orElseThrow(() -> new UserNotFoundException("Błąd użytkownika"));
+        User user = userRepository.getById(1);
 
         ratingService.deleteRating(user, type, id);
     }

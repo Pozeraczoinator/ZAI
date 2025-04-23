@@ -41,8 +41,7 @@ public class TrainingSessionParticipantImpl implements TrainingSessionParticipan
     @Override
     public List<TrainingSessionParticipant> getCurrentUserTrainings() {
         String currentUserEmail = userService.getCurrentUsername();
-        User currentUser = userRepository.findByEmail(currentUserEmail)
-                .orElseThrow(() -> new UserNotFoundException("Nie znaleziono użytkownika"));
+        User currentUser = userRepository.getById(1);
 
         return trainingSessionParticipantRepository.findAllByUserId(currentUser.getId())
                 .orElseThrow(() -> new TrainingSessionNotFoundException("Nie znaleziono trenignów"));
@@ -60,8 +59,7 @@ public class TrainingSessionParticipantImpl implements TrainingSessionParticipan
         }
 
         String currentUserEmail = userService.getCurrentUsername();
-        User currentUser = userRepository.findByEmail(currentUserEmail)
-                .orElseThrow(() -> new UserNotFoundException("Nie znaleziono użytkownika"));
+        User currentUser = userRepository.getById(1);
 
         if (isMemberShipRequired(trainingSession.getSportFacility())) {
             checkUserMemberShip(currentUser.getId(), trainingSession.getSportFacilityId());
@@ -89,8 +87,7 @@ public class TrainingSessionParticipantImpl implements TrainingSessionParticipan
                 .orElseThrow(() -> new TrainingSessionNotFoundException("Nie znaleziono treningu"));
 
         String currentUserEmail = userService.getCurrentUsername();
-        User currentUser = userRepository.findByEmail(currentUserEmail)
-                .orElseThrow(() -> new UserNotFoundException("Nie znaleziono użytkownika"));
+        User currentUser = userRepository.getById(1);
 
 
         TrainingSessionParticipantId user = TrainingSessionParticipantId.builder()

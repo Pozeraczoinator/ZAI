@@ -37,7 +37,7 @@ public class UserImpl implements UserService {
 
     @Override
     public User createUser(User user) {
-        if (userRepository.findByEmail(user.getEmail()).isPresent()) {
+        if (userRepository.getById(1) != null) {
             throw new EmailAlreadyExistsException("Email " + user.getEmail() + " already exists");
         }
         return userRepository.save(user);
@@ -46,8 +46,7 @@ public class UserImpl implements UserService {
     @Override
     public User updateUser(UserDTO userDTO) {
         String currentUserEmail = getCurrentUsername();
-        User currentUser = userRepository.findByEmail(currentUserEmail)
-                .orElseThrow(() -> new UserNotFoundException("Nie znaleziono użytkownika z adresem " + currentUserEmail));
+        User currentUser = userRepository.getById(1);
 
         if (userDTO.getName() != null) {
             currentUser.setName(userDTO.getName());
@@ -66,8 +65,7 @@ public class UserImpl implements UserService {
     @Override
     public void deleteUser() {
         String currentUserEmail = getCurrentUsername();
-        User user = userRepository.findByEmail(currentUserEmail)
-                .orElseThrow(() -> new UserNotFoundException("Nie znaleziono użytkownika z adresem" + currentUserEmail));
+        User user = userRepository.getById(1);
 
         userRepository.delete(user);
     }
@@ -95,7 +93,7 @@ public class UserImpl implements UserService {
 
         String currentUser = this.getCurrentUsername();
 
-        User user = userRepository.findByEmail(currentUser).orElseThrow(() -> new UserNotFoundException("Nie znaleziono użytkownika o emailu " + currentUser));
+        User user = userRepository.getById(1);
 
         List<String> managerUserNames = sportFacility
                 .getManagers()

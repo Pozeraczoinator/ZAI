@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-04-23T07:46:07" hostname="DESKTOP-NVIS5CR" time="0.208">
+<testsuite name="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-04-23T08:13:25" hostname="DESKTOP-NVIS5CR" time="0.216">
   <properties/>
-  <testcase name="deleteFacilityNews_ShouldDeleteNews()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.165"/>
-  <testcase name="updateFacilityNews_ShouldUpdateExistingNews()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.011"/>
-  <testcase name="deleteFacilityNews_ShouldThrowException_WhenNewsNotFound()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.009"/>
-  <testcase name="createFacilityNews_ShouldCreateNewNews()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.006"/>
+  <testcase name="deleteFacilityNews_ShouldDeleteNews()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.175"/>
+  <testcase name="updateFacilityNews_ShouldUpdateExistingNews()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.01"/>
+  <testcase name="deleteFacilityNews_ShouldThrowException_WhenNewsNotFound()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.008"/>
+  <testcase name="createFacilityNews_ShouldCreateNewNews()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.005"/>
   <testcase name="getAllFacilityNews_ShouldReturnListOfNews()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.005"/>
   <testcase name="getFacilityNewsBySportFacilityId_ShouldReturnNews()" classname="put.poznan.sport.service.sportFacilityNews.SportFacilityNewsImplTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>

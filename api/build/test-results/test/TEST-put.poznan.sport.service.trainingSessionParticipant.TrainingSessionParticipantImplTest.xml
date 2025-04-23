@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-23T07:46:07" hostname="DESKTOP-NVIS5CR" time="0.276">
+<testsuite name="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2025-04-23T08:13:26" hostname="DESKTOP-NVIS5CR" time="0.303">
   <properties/>
-  <testcase name="leaveTraining_ShouldRemoveParticipant()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.261"/>
-  <testcase name="joinTraining_ShouldAddParticipant()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.008"/>
-  <testcase name="getAllParticipant_ShouldReturnListOfParticipants()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.005"/>
+  <testcase name="leaveTraining_ShouldRemoveParticipant()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.279">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;put.poznan.sport.entity.User.getId()&quot; because &quot;currentUser&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;put.poznan.sport.entity.User.getId()&quot; because &quot;currentUser&quot; is null
+	at put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImpl.leaveTraining(TrainingSessionParticipantImpl.java:94)
+	at put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest.leaveTraining_ShouldRemoveParticipant(TrainingSessionParticipantImplTest.java:148)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="joinTraining_ShouldAddParticipant()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.014">
+    <failure message="java.lang.NullPointerException: Cannot invoke &quot;put.poznan.sport.entity.User.getId()&quot; because &quot;currentUser&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;put.poznan.sport.entity.User.getId()&quot; because &quot;currentUser&quot; is null
+	at put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImpl.joinTraining(TrainingSessionParticipantImpl.java:68)
+	at put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest.joinTraining_ShouldAddParticipant(TrainingSessionParticipantImplTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="getAllParticipant_ShouldReturnListOfParticipants()" classname="put.poznan.sport.service.trainingSessionParticipant.TrainingSessionParticipantImplTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
