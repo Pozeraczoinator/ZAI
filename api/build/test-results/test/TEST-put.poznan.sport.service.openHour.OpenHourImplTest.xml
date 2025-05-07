@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="put.poznan.sport.service.openHour.OpenHourImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-04-23T08:13:25" hostname="DESKTOP-NVIS5CR" time="0.121">
+<testsuite name="put.poznan.sport.service.openHour.OpenHourImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-05-07T08:08:44" hostname="DESKTOP-NVIS5CR" time="0.076">
   <properties/>
-  <testcase name="getOpenHourById_ShouldThrowException_WhenNotFound()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.095"/>
-  <testcase name="saveOpenHour_ShouldSaveAndReturnOpenHour()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.011"/>
-  <testcase name="getOpenHourById_ShouldReturnOpenHour_WhenExists()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.005"/>
+  <testcase name="getOpenHourById_ShouldThrowException_WhenNotFound()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.048"/>
+  <testcase name="saveOpenHour_ShouldSaveAndReturnOpenHour()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.009"/>
+  <testcase name="getOpenHourById_ShouldReturnOpenHour_WhenExists()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.007"/>
   <testcase name="deleteOpenHour_ShouldDeleteOpenHour()" classname="put.poznan.sport.service.openHour.OpenHourImplTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
